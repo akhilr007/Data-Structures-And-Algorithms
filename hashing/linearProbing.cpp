@@ -65,7 +65,7 @@ void LinearProbing(int hash[], int hashSize, int arr[], int sizeOfArray)
 			int value;
 			value = hash[hashValue];
 
-			while(hash[hashValue] != -1 && counter != -1)
+			while(hash[hashValue] != -1 && counter != hashSize)
 			{
 				value = value + 1;
 				hashValue = value % hashSize;
